@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Http\Requests\PostRequest;
 
 class PostController extends Controller
 {
@@ -26,7 +27,7 @@ class PostController extends Controller
     {
     $input = $request['post'];
     $post->fill($input)->save();
-    return redirect('/posts/' . $post->id);
+    return redirect('/');
     }
     
     public function edit(Post $post)
