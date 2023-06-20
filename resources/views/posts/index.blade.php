@@ -4,16 +4,14 @@
         <meta charset="utf-8">
         <title>Spettacolo</title>
 
-        <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
     </head>
     <body class="antialiased">
         <h1>Blog Name</h1>
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
-                    <h2 class='title'>{{ $post->title }}</h2>
+                    <a href="/posts/{{ $post->id }}">{{ $post->title }}<h2 class='title'>{{ $post->title }}</h2></a>
                     <p class='body'>{{ $post->body }}</p>
                 </div>
             @endforeach
