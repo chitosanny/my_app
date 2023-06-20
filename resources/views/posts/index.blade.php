@@ -9,6 +9,7 @@
     <body class="antialiased">
         <a href='/posts/create'>create</a>
         <h1>Blog Name</h1>
+        <a href='/posts/create'>create</a>
         <div class='posts'>
             @foreach ($posts as $post)
                 <div class='post'>
